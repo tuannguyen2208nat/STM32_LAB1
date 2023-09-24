@@ -138,6 +138,27 @@ int main(void)
  	 	HAL_Delay(1000);
 
  	  }
+
+   void clearNumberOnClock(int num)
+     {  int a=num+1;
+     	switch (a)
+     		{
+     		case 1 : dentat1();break;
+     		case 2 : dentat2();break;
+     		case 3 : dentat3();break;
+     		case 4 : dentat4();break;
+     		case 5 : dentat5();break;
+     		case 6 : dentat6();break;
+     		case 7 : dentat7();break;
+     		case 8 : dentat8();break;
+     		case 9 : dentat9();break;
+     		case 10 : dentat10();break;
+     		case 11 : dentat11();break;
+     		case 12 : dentat12();break;
+     		default: break;
+     		}
+     }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

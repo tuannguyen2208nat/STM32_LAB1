@@ -29,23 +29,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  12 .comment      00000043  00000000  00000000  00020035  2**0
                   CONTENTS, READONLY
- 13 .debug_info   000028c0  00000000  00000000  00020078  2**0
+ 13 .debug_info   000028d3  00000000  00000000  00020078  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00000e01  00000000  00000000  00022938  2**0
+ 14 .debug_abbrev 00000e14  00000000  00000000  0002294b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 000003d0  00000000  00000000  00023740  2**3
+ 15 .debug_aranges 000003d0  00000000  00000000  00023760  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 000002b7  00000000  00000000  00023b10  2**0
+ 16 .debug_rnglists 000002b7  00000000  00000000  00023b30  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  000155b1  00000000  00000000  00023dc7  2**0
+ 17 .debug_macro  000155b1  00000000  00000000  00023de7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000490e  00000000  00000000  00039378  2**0
+ 18 .debug_line   0000490f  00000000  00000000  00039398  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000799bb  00000000  00000000  0003dc86  2**0
+ 19 .debug_str    000799ce  00000000  00000000  0003dca7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  00000d30  00000000  00000000  000b7644  2**2
+ 20 .debug_frame  00000d30  00000000  00000000  000b7678  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000073  00000000  00000000  000b8374  2**0
+ 21 .debug_line_str 00000073  00000000  00000000  000b83a8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -112,7 +112,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000160:	f000 f83c 	bl	80001dc <MX_GPIO_Init>
- 	  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
