@@ -47,6 +47,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -83,8 +84,106 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
+  MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  void display7SEG(int n)
+  {
+  	switch (n)
+  	{
+  	case 0 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, RESET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, SET);
+  	    break ;
+  	case 1 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, SET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, SET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, SET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, SET);
+  	    break;
+  	case 2 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, SET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, RESET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, SET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  	    break ;
+  	case 3 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, SET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  	    break ;
+  	case 4 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, SET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, SET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  		break ;
+  	case 5 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, SET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  		break ;
+  	case 6 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, SET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, RESET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  	    break ;
+  	case 7 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, SET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, SET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, SET);
+  		break ;
+  	case 8 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  	    HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, RESET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  		break ;
+  	case 9 :
+  		HAL_GPIO_WritePin(chana_GPIO_Port,chana_Pin, RESET);
+  		HAL_GPIO_WritePin(chanb_GPIO_Port,chanb_Pin, RESET);
+  		HAL_GPIO_WritePin(chanc_GPIO_Port,chanc_Pin, RESET);
+  		HAL_GPIO_WritePin(chand_GPIO_Port,chand_Pin, RESET);
+  		HAL_GPIO_WritePin(chane_GPIO_Port,chane_Pin, SET);
+  		HAL_GPIO_WritePin(chanf_GPIO_Port,chanf_Pin, RESET);
+  		HAL_GPIO_WritePin(chang_GPIO_Port,chang_Pin, RESET);
+  		break ;
 
+  	}
+  }
+  int counter=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -92,7 +191,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if(counter>=10){counter=0;}
+	  display7SEG(counter++);
+	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -132,6 +233,37 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPIO_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+/* USER CODE BEGIN MX_GPIO_Init_1 */
+/* USER CODE END MX_GPIO_Init_1 */
+
+  /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, chana_Pin|chanb_Pin|chanc_Pin|chand_Pin
+                          |chane_Pin|chanf_Pin|chang_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : chana_Pin chanb_Pin chanc_Pin chand_Pin
+                           chane_Pin chanf_Pin chang_Pin */
+  GPIO_InitStruct.Pin = chana_Pin|chanb_Pin|chanc_Pin|chand_Pin
+                          |chane_Pin|chanf_Pin|chang_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+/* USER CODE BEGIN MX_GPIO_Init_2 */
+/* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */

@@ -57,6 +57,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define chana_Pin GPIO_PIN_0
+#define chana_GPIO_Port GPIOB
+#define chanb_Pin GPIO_PIN_1
+#define chanb_GPIO_Port GPIOB
+#define chanc_Pin GPIO_PIN_2
+#define chanc_GPIO_Port GPIOB
+#define chand_Pin GPIO_PIN_3
+#define chand_GPIO_Port GPIOB
+#define chane_Pin GPIO_PIN_4
+#define chane_GPIO_Port GPIOB
+#define chanf_Pin GPIO_PIN_5
+#define chanf_GPIO_Port GPIOB
+#define chang_Pin GPIO_PIN_6
+#define chang_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
