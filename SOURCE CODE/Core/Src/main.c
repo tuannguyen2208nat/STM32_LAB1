@@ -86,23 +86,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  int i=1;
 
-    void den1()
+  void clearAllClock ()
     {
-  	    HAL_GPIO_WritePin(chan1_GPIO_Port, chan1_Pin,RESET);
-  		HAL_GPIO_WritePin(chan2_GPIO_Port, chan2_Pin,SET);
-  		HAL_GPIO_WritePin(chan3_GPIO_Port, chan3_Pin,SET);
-  		HAL_GPIO_WritePin(chan4_GPIO_Port, chan4_Pin,SET);
-  		HAL_GPIO_WritePin(chan5_GPIO_Port, chan5_Pin,SET);
-  		HAL_GPIO_WritePin(chan6_GPIO_Port, chan6_Pin,SET);
-  		HAL_GPIO_WritePin(chan7_GPIO_Port, chan7_Pin,SET);
-  		HAL_GPIO_WritePin(chan8_GPIO_Port, chan8_Pin,SET);
-  		HAL_GPIO_WritePin(chan9_GPIO_Port, chan9_Pin,SET);
-  		HAL_GPIO_WritePin(chan10_GPIO_Port, chan10_Pin,SET);
-  		HAL_GPIO_WritePin(chan11_GPIO_Port,chan11_Pin,SET);
-  		HAL_GPIO_WritePin(chan12_GPIO_Port, chan12_Pin,SET);
+  	  HAL_GPIO_WritePin(chan1_GPIO_Port, chan1_Pin,SET);
+  	  HAL_GPIO_WritePin(chan2_GPIO_Port, chan2_Pin,SET);
+  	  HAL_GPIO_WritePin(chan3_GPIO_Port, chan3_Pin,SET);
+  	  HAL_GPIO_WritePin(chan4_GPIO_Port, chan4_Pin,SET);
+  	  HAL_GPIO_WritePin(chan5_GPIO_Port, chan5_Pin,SET);
+  	  HAL_GPIO_WritePin(chan6_GPIO_Port, chan6_Pin,SET);
+  	  HAL_GPIO_WritePin(chan7_GPIO_Port, chan7_Pin,SET);
+  	  HAL_GPIO_WritePin(chan8_GPIO_Port, chan8_Pin,SET);
+  	  HAL_GPIO_WritePin(chan9_GPIO_Port, chan9_Pin,SET);
+  	  HAL_GPIO_WritePin(chan10_GPIO_Port, chan10_Pin,SET);
+  	  HAL_GPIO_WritePin(chan11_GPIO_Port,chan11_Pin,SET);
+  	  HAL_GPIO_WritePin(chan12_GPIO_Port, chan12_Pin,SET);
     }
+
+    void den1(){ HAL_GPIO_WritePin(chan1_GPIO_Port, chan1_Pin,RESET);}
     void den2(){ HAL_GPIO_WritePin(chan2_GPIO_Port, chan2_Pin,RESET); }
     void den3(){ HAL_GPIO_WritePin(chan3_GPIO_Port, chan3_Pin,RESET); }
     void den4(){ HAL_GPIO_WritePin(chan4_GPIO_Port, chan4_Pin,RESET); }
@@ -122,23 +123,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  switch (i)
-	  {
-	  case 1 : den1();break;
-	  case 2 : den2();break;
-	  case 3 : den3();break;
-	  case 4 : den4();break;
-	  case 5 : den5();break;
-	  case 6 : den6();break;
-	  case 7 : den7();break;
-	  case 8 : den8();break;
-	  case 9 : den9();break;
-	  case 10: den10();break;
-	  case 11: den11();break;
-	  case 12: den12();i=0;break;
-	  }
-	  HAL_Delay(1000);
-	  i++;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
