@@ -57,6 +57,46 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define led_red1_Pin GPIO_PIN_1
+#define led_red1_GPIO_Port GPIOA
+#define led_yellow1_Pin GPIO_PIN_2
+#define led_yellow1_GPIO_Port GPIOA
+#define led_green1_Pin GPIO_PIN_3
+#define led_green1_GPIO_Port GPIOA
+#define led_red2_Pin GPIO_PIN_4
+#define led_red2_GPIO_Port GPIOA
+#define led_yellow2_Pin GPIO_PIN_5
+#define led_yellow2_GPIO_Port GPIOA
+#define led_green2_Pin GPIO_PIN_6
+#define led_green2_GPIO_Port GPIOA
+#define chan1a_Pin GPIO_PIN_0
+#define chan1a_GPIO_Port GPIOB
+#define chan1b_Pin GPIO_PIN_1
+#define chan1b_GPIO_Port GPIOB
+#define chan1c_Pin GPIO_PIN_2
+#define chan1c_GPIO_Port GPIOB
+#define chan2c_Pin GPIO_PIN_10
+#define chan2c_GPIO_Port GPIOB
+#define chan2d_Pin GPIO_PIN_11
+#define chan2d_GPIO_Port GPIOB
+#define chan2e_Pin GPIO_PIN_13
+#define chan2e_GPIO_Port GPIOB
+#define chan2f_Pin GPIO_PIN_14
+#define chan2f_GPIO_Port GPIOB
+#define chan2g_Pin GPIO_PIN_15
+#define chan2g_GPIO_Port GPIOB
+#define chan1d_Pin GPIO_PIN_3
+#define chan1d_GPIO_Port GPIOB
+#define chan1e_Pin GPIO_PIN_4
+#define chan1e_GPIO_Port GPIOB
+#define chan1f_Pin GPIO_PIN_5
+#define chan1f_GPIO_Port GPIOB
+#define chan1g_Pin GPIO_PIN_6
+#define chan1g_GPIO_Port GPIOB
+#define chan2a_Pin GPIO_PIN_8
+#define chan2a_GPIO_Port GPIOB
+#define chan2b_Pin GPIO_PIN_9
+#define chan2b_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
