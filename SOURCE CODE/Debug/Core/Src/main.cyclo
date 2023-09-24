@@ -1,7 +1,10 @@
-../Core/Src/main.c:90:8:do1	1
+../Core/Src/main.c:90:10:do1	1
 ../Core/Src/main.c:64:5:main	5
-../Core/Src/main.c:94:8:xanh1	1
-../Core/Src/main.c:100:8:vang1	1
-../Core/Src/main.c:128:6:SystemClock_Config	3
-../Core/Src/main.c:165:13:MX_GPIO_Init	1
-../Core/Src/main.c:196:6:Error_Handler	1
+../Core/Src/main.c:94:10:xanh1	1
+../Core/Src/main.c:100:10:vang1	1
+../Core/Src/main.c:105:10:do2	1
+../Core/Src/main.c:109:10:xanh2	1
+../Core/Src/main.c:115:10:vang2	1
+../Core/Src/main.c:145:6:SystemClock_Config	3
+../Core/Src/main.c:182:13:MX_GPIO_Init	1
+../Core/Src/main.c:216:6:Error_Handler	1
