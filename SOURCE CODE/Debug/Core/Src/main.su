@@ -1,0 +1,16 @@
+../Core/Src/main.c:91:10:den1	16	static
+../Core/Src/main.c:64:5:main	16	static
+../Core/Src/main.c:106:10:den2	16	static
+../Core/Src/main.c:107:10:den3	16	static
+../Core/Src/main.c:108:10:den4	16	static
+../Core/Src/main.c:109:10:den5	16	static
+../Core/Src/main.c:110:10:den6	16	static
+../Core/Src/main.c:111:10:den7	16	static
+../Core/Src/main.c:112:10:den8	16	static
+../Core/Src/main.c:113:10:den9	16	static
+../Core/Src/main.c:114:10:den10	16	static
+../Core/Src/main.c:115:10:den11	16	static
+../Core/Src/main.c:116:10:den12	16	static
+../Core/Src/main.c:151:6:SystemClock_Config	72	static
+../Core/Src/main.c:188:13:MX_GPIO_Init	32	static
+../Core/Src/main.c:225:6:Error_Handler	4	static,ignoring_inline_asm
