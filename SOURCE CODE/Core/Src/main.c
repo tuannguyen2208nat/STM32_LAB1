@@ -271,7 +271,7 @@ HAL_GPIO_WritePin(led_yellow2_GPIO_Port, led_yellow2_Pin,SET);
 	  {
 	  case 1 :
 	  	do1();xanh2();
-	  	for(a=6,b=3;b>=0;a--,b--)
+	  	for(a=5,b=3;b>=1;a--,b--)
 	  	{
 	  		display7SEGa(a);
 	  		display7SEGb(b);
@@ -280,7 +280,7 @@ HAL_GPIO_WritePin(led_yellow2_GPIO_Port, led_yellow2_Pin,SET);
 	  	break;
 	  case 2 :
 	  	do1();vang2();
-	  	for(a=2,b=2;b>=0;a--,b--)
+	  	for(a=2,b=2;b>=1;a--,b--)
 	  	{
 	  		display7SEGa(a);
 	  		display7SEGb(b);
@@ -289,7 +289,7 @@ HAL_GPIO_WritePin(led_yellow2_GPIO_Port, led_yellow2_Pin,SET);
 	  	break;
 	  case 3 :
 	  	xanh1();do2();
-	  	for(a=3,b=6;a>=0;a--,b--)
+	  	for(a=3,b=6;a>=1;a--,b--)
 	  	{
 	  		display7SEGa(a);
 	  		display7SEGb(b);
@@ -297,7 +297,7 @@ HAL_GPIO_WritePin(led_yellow2_GPIO_Port, led_yellow2_Pin,SET);
 	  	}
 	  	break;
 	  case 4 : vang1();do2();
-	  for(a=2,b=2;a>=0;a--,b--)
+	  for(a=2,b=2;a>=1;a--,b--)
 	  	{
 	  		display7SEGa(a);
 	  		display7SEGb(b);

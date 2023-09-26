@@ -156,8 +156,8 @@ int main(void)
  80001c4:	463b      	mov	r3, r7
  80001c6:	469c      	mov	ip, r3
  80001c8:	f000 f8e2 	bl	8000390 <xanh2.0>
-	  	for(a=6,b=3;b>=0;a--,b--)
- 80001cc:	2306      	movs	r3, #6
+	  	for(a=5,b=3;b>=1;a--,b--)
+ 80001cc:	2305      	movs	r3, #5
  80001ce:	60fb      	str	r3, [r7, #12]
  80001d0:	2303      	movs	r3, #3
  80001d2:	60bb      	str	r3, [r7, #8]
@@ -176,7 +176,7 @@ int main(void)
 	  		HAL_Delay(1000);
  80001ea:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80001ee:	f000 fce1 	bl	8000bb4 <HAL_Delay>
-	  	for(a=6,b=3;b>=0;a--,b--)
+	  	for(a=5,b=3;b>=1;a--,b--)
  80001f2:	68fb      	ldr	r3, [r7, #12]
  80001f4:	3b01      	subs	r3, #1
  80001f6:	60fb      	str	r3, [r7, #12]
@@ -185,7 +185,7 @@ int main(void)
  80001fc:	60bb      	str	r3, [r7, #8]
  80001fe:	68bb      	ldr	r3, [r7, #8]
  8000200:	2b00      	cmp	r3, #0
- 8000202:	dae8      	bge.n	80001d6 <main+0x56>
+ 8000202:	dce8      	bgt.n	80001d6 <main+0x56>
 	  	}
 	  	break;
  8000204:	e071      	b.n	80002ea <main+0x16a>
@@ -197,7 +197,7 @@ int main(void)
  800020e:	463b      	mov	r3, r7
  8000210:	469c      	mov	ip, r3
  8000212:	f000 f8d7 	bl	80003c4 <vang2.2>
-	  	for(a=2,b=2;b>=0;a--,b--)
+	  	for(a=2,b=2;b>=1;a--,b--)
  8000216:	2302      	movs	r3, #2
  8000218:	60fb      	str	r3, [r7, #12]
  800021a:	2302      	movs	r3, #2
@@ -217,7 +217,7 @@ int main(void)
 	  		HAL_Delay(1000);
  8000234:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  8000238:	f000 fcbc 	bl	8000bb4 <HAL_Delay>
-	  	for(a=2,b=2;b>=0;a--,b--)
+	  	for(a=2,b=2;b>=1;a--,b--)
  800023c:	68fb      	ldr	r3, [r7, #12]
  800023e:	3b01      	subs	r3, #1
  8000240:	60fb      	str	r3, [r7, #12]
@@ -226,7 +226,7 @@ int main(void)
  8000246:	60bb      	str	r3, [r7, #8]
  8000248:	68bb      	ldr	r3, [r7, #8]
  800024a:	2b00      	cmp	r3, #0
- 800024c:	dae8      	bge.n	8000220 <main+0xa0>
+ 800024c:	dce8      	bgt.n	8000220 <main+0xa0>
 	  	}
 	  	break;
  800024e:	e04c      	b.n	80002ea <main+0x16a>
@@ -238,7 +238,7 @@ int main(void)
  8000258:	463b      	mov	r3, r7
  800025a:	469c      	mov	ip, r3
  800025c:	f000 f87e 	bl	800035c <do2.5>
-	  	for(a=3,b=6;a>=0;a--,b--)
+	  	for(a=3,b=6;a>=1;a--,b--)
  8000260:	2303      	movs	r3, #3
  8000262:	60fb      	str	r3, [r7, #12]
  8000264:	2306      	movs	r3, #6
@@ -258,7 +258,7 @@ int main(void)
 	  		HAL_Delay(1000);
  800027e:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  8000282:	f000 fc97 	bl	8000bb4 <HAL_Delay>
-	  	for(a=3,b=6;a>=0;a--,b--)
+	  	for(a=3,b=6;a>=1;a--,b--)
  8000286:	68fb      	ldr	r3, [r7, #12]
  8000288:	3b01      	subs	r3, #1
  800028a:	60fb      	str	r3, [r7, #12]
@@ -267,7 +267,7 @@ int main(void)
  8000290:	60bb      	str	r3, [r7, #8]
  8000292:	68fb      	ldr	r3, [r7, #12]
  8000294:	2b00      	cmp	r3, #0
- 8000296:	dae8      	bge.n	800026a <main+0xea>
+ 8000296:	dce8      	bgt.n	800026a <main+0xea>
 	  	}
 	  	break;
  8000298:	e027      	b.n	80002ea <main+0x16a>
@@ -278,7 +278,7 @@ int main(void)
  80002a2:	463b      	mov	r3, r7
  80002a4:	469c      	mov	ip, r3
  80002a6:	f000 f859 	bl	800035c <do2.5>
-	  for(a=2,b=2;a>=0;a--,b--)
+	  for(a=2,b=2;a>=1;a--,b--)
  80002aa:	2302      	movs	r3, #2
  80002ac:	60fb      	str	r3, [r7, #12]
  80002ae:	2302      	movs	r3, #2
@@ -298,7 +298,7 @@ int main(void)
 	  		HAL_Delay(1000);
  80002c8:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80002cc:	f000 fc72 	bl	8000bb4 <HAL_Delay>
-	  for(a=2,b=2;a>=0;a--,b--)
+	  for(a=2,b=2;a>=1;a--,b--)
  80002d0:	68fb      	ldr	r3, [r7, #12]
  80002d2:	3b01      	subs	r3, #1
  80002d4:	60fb      	str	r3, [r7, #12]
@@ -307,7 +307,7 @@ int main(void)
  80002da:	60bb      	str	r3, [r7, #8]
  80002dc:	68fb      	ldr	r3, [r7, #12]
  80002de:	2b00      	cmp	r3, #0
- 80002e0:	dae8      	bge.n	80002b4 <main+0x134>
+ 80002e0:	dce8      	bgt.n	80002b4 <main+0x134>
 	  	}
 	      i=0;break;
  80002e2:	2300      	movs	r3, #0
